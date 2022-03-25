@@ -41,7 +41,7 @@ const CardWrapper = styled.div`
   & > * {
     grid-area: Stack;
   }
-
+  /* width: 100%; */
   @media (min-width: 768px) {
     max-width: 403px;
     padding-inline: 0px;

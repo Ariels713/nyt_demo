@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import Head from "next/head";
-import MainHero from "../components/MainHero";
+import MainHero from "../components/heros/MainHero";
 import VideoImagePlaceholder from "../components/video/VideoImagePlaceholder";
 import ImageGrid from "../components/imageGrid/ImageGrid";
-import ImageCard from "../components/ImageCards/ImageCardCenteredCopy";
+import AudioImage from "../components/audio/AudioImage";
+import SubHero from "../components/heros/SubHero";
+import ImageCardCenteredCopy from "../components/ImageCards/ImageCardCenteredCopy";
+import MovingImages from "../components/gifSection/MovingImages";
 
 export default function Home() {
   return (
@@ -19,6 +22,14 @@ export default function Home() {
           <VideoImagePlaceholder />
         </FullBleed>
         <ImageGrid />
+        <FullBleed>
+          <AudioImage
+            backgroundImage="https://mwcm.nyt.com/dam/LP/brand/1619/img/BK-audio.png"
+            copy="If we can't acknowledge the truth about the institution of slavery, then how do we go on to fix the legacy of it?"
+          />
+        </FullBleed>
+        <SubHero />
+        <MovingImages />
       </Wrapper>
     </div>
   );

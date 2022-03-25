@@ -99,13 +99,11 @@ const GridArea2 = styled.div`
   flex-direction: column;
   gap: 1rem;
   margin-inline: auto;
-
   &:first-child {
     margin-top: 4rem;
   }
 
   @media (min-width: 768px) {
-    /* max-width: 1241px; */
     flex-direction: row;
     gap: 0.85rem;
   }
