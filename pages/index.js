@@ -7,6 +7,7 @@ import AudioImage from "../components/audio/AudioImage";
 import SubHero from "../components/heros/SubHero";
 import ImageCardCenteredCopy from "../components/ImageCards/ImageCardCenteredCopy";
 import MovingImages from "../components/gifSection/MovingImages";
+import SubscribeHero from "../components/heros/SubscribeHero";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         </FullBleed>
         <SubHero />
         <MovingImages />
+        <SubscribeHero />
       </Wrapper>
     </div>
   );
