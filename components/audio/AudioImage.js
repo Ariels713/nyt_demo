@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import BaseImage from "../ImageCards/BaseImage";
 import PlayButton from "../video/PlayButton";
+import PlayBar from "./PlayBar";
 
 function AudioImage({ backgroundImage, header, copy, imageSrc }) {
   return (
@@ -28,6 +29,9 @@ function AudioImage({ backgroundImage, header, copy, imageSrc }) {
         <p>New YOrk Times Magazine Correspondent</p>
         <p>and creator of The 1619 Project</p>
       </SubHeader>
+      <PlayButtons place="end center">
+        <PlayBar />
+      </PlayButtons>
     </CardWrapper>
   );
 }
@@ -64,7 +68,9 @@ const SubHeader = styled.p`
   place-self: ${(props) => props.place};
   margin-block-end: 1rem;
   @media (min-width: 768px) {
-    font-size: 3rem;
+    font-size: 1rem;
+
+    margin-bottom: 11rem;
   }
 `;
 
@@ -80,10 +86,11 @@ const Copy = styled.p`
   font-family: serif;
 
   @media (min-width: 768px) {
+    margin-top: -2rem;
     max-width: 622px;
     margin-inline: auto;
-    font-size: 1.5rem;
-    line-height: 25px;
+    font-size: 3rem;
+    line-height: 49px;
   }
 `;
 
@@ -99,6 +106,16 @@ const Listen = styled.span`
 const ButtonContainer = styled.div`
   margin-block-start: 2rem;
   place-self: ${(props) => props.place};
+
+  @media (min-width: 776px) {
+    display: none;
+  }
+`;
+
+const PlayButtons = styled.div`
+  place-self: ${(props) => props.place};
+  width: 100%;
+  margin-inline: 2rem;
 `;
 
 AudioImage.propTypes = {
