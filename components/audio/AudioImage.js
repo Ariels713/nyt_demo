@@ -49,6 +49,8 @@ const CardWrapper = styled.div`
   & > * {
     grid-area: Stack;
   }
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%))); */
 
   @media (min-width: 768px) {
     padding-inline: 0px;

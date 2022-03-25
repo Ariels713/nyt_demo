@@ -53,4 +53,6 @@ const Wrapper = styled.div`
 
 const FullBleed = styled.div`
   grid-column: 1 / -1;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%))); */
 `;
